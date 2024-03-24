@@ -1,38 +1,118 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-button:hover {
+  color: white !important;
+  background-color: rgba(0, 0, 0, 0.89) !important;
+}
+.signup-button:hover {
+  color: white !important;
+  background-color: rgba(0, 0, 0, 0.89) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.ri-contrast-drop-line {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+}
+
+.carousel .slide img {
+  max-height: 700px; 
+  width: auto; 
+  object-fit:cover;
+  /* filter: grayscale(5%) brightness(50%); */
+}
+@media (max-width: 600px) {
+  .carousel .slide img {
+    min-height: 410px; 
+    width: auto; 
+    object-fit: cover;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.carousel-slide {
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.carousel-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px;
+  color: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.carousel-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 44px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 600px) {
+  .carousel-title {
+    width: 330px;
+    text-align: left;
+    font-size: 30px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (min-width: 600px) {
+  .carousel-title {
+    width: 700px;
+    text-align: left;
+    font-size: 35px;
   }
+}
+@media (max-width: 600px) {
+  .carousel-description {
+    margin-top: -2px;
+    width: 300px;
+    /* text-align: left; */
+    font-size: 12px;
+  }
+}
+@media (min-width: 600px) {
+  .carousel-description {
+    width: 700px;
+    font-size: 31px;
+  }
+}
+.carousel-description {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 4px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.image-below {
+  text-align: center; /* Center the content horizontally */
+  margin-top: 15px;
+}
+
+.image-below img {
+  max-width: 100%; /* Ensure the image doesn't exceed the width of the container */
+  height: auto; /* Maintain the image's aspect ratio */
+  display: block; /* Remove any extra spacing around the image */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.card .card-img-top {
+  max-height: 100%;
+  max-width: 100%;
+}
+.card {
+  border-radius: 0px !important;
+  transition: border 0.3s; /* Add a transition for smooth hover effect */
+}
+.card:hover {
+  border: 2px solid black; /* You can adjust the width and color as needed */
+}
+
+.Walker {
+  font-family: 'Lobster', sans-serif;
 }
